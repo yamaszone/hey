@@ -1,5 +1,6 @@
-FROM golang
+FROM golang:1.10-alpine3.8
 
-RUN go get -u github.com/rakyll/hey
+RUN apk add --no-cache git \
+	&& go get -u github.com/rakyll/hey
 
 ENTRYPOINT ["hey"]
