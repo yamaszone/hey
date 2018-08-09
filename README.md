@@ -1,14 +1,17 @@
 # HEY
 [Hey](https://github.com/rakyll/hey) load tester
 
+## Install
+- `sudo cp ./hey /usr/local/bin/` # macOS, Amazon Linux, Ubuntut, etc.
+- `sudo cp ./hey /opt/bin/` # CoreOS
+
 ## Usage
-```
-docker run --rm -it yamaszone/hey --help
-```
+- `docker run --rm -it yamaszone/hey --help` # Directly run via Docker
+- `hey --help` # If installed binary from project root
 
 ## Example
 ```
-docker run --rm -it yamaszone/hey -n 20 -c 5 -m GET http://httpbin.org/
+hey -n 20 -c 5 -m GET http://httpbin.org/
 ```
 ```
 Summary:
