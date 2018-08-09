@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker run -it --rm yamaszone:hey "$@"
+docker run -it --rm yamaszone/hey "$@"
 
